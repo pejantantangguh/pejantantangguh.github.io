@@ -43,6 +43,16 @@ body {
 
 }
 
+/*********************
+
+     DRUMKIT PAGE
+
+**********************/
+
+.drumkit {
+    justify-content: start;
+}
+
 .title {
     margin: auto;
     font-family: 'Permanent Marker', cursive;

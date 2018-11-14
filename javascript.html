@@ -7,19 +7,63 @@
     <link rel="stylesheet" type="text/css" media="screen" href="normalize.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="layout.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="card.css" />
     <title>JavaScript Portofolio</title>
 </head>
 <body class="grid__template-layout">
     <header class="back__button"> <a href="index.html"><button> << Back </button> </a></header>
         
-    <main class="flex__display splash-screen load drumkit">
-        <div>
+    <main class="splash-screen load drumkit">
+        <div class="flex__display">
                 <div class="title">
-                    <h1 class="title-top"><span class="big__letter">D</span>rum <span class="big__letter">K</span>it</h1>
+                    <h1 class="title-top"><span class="big__letter">J</span>ava <span class="big__letter">S</span>Cript</h1>
+                </div>
+
+                <div class="purple-with-blue">
+                    List of my JavaScript play Ground
                 </div>
             </div>
+            
+        <div class="cards">
+            <ul>
+                <li class="cards__item">
+                  <div class="card">
+                    <div class="card__image card__image--fence"></div>
+                    <div class="card__content">
+                      <div class="card__title">Drum Kit</div>
+                      <p class="card__text"> This is my drumkit created purely with Vanilla JavaScript </p>
+                        <ul class="key__takeaway">  Key take away on this project
+                            <li>Key Events</li>
+                            <li>Event Listening ( Animations End )</li>
+                            <li>Logical IF to stop a functions </li>
+                            <li>Query selector looping </li>
+                            <li>Using vanilla JS for removing class</li>
+                        </ul>
 
-
+                      
+                      <a href="drumkit.html"> <button class="btn btn--block card__btn"> Play Drum   </button> </a> 
+                    </div>
+                  </div>
+                </li>
+                <li class="cards__item">
+                    <div class="card">
+                      <div class="card__image card__image--fence"></div>
+                      <div class="card__content">
+                        <div class="card__title"> Clock </div>
+                        <p class="card__text"> Tik Tok Tik Tok ...  </p>
+                        <ul class="key__takeaway"> Key take away on this project
+                            <li>Rotate css</li>
+                            <li>Transform Origin and transform Rotate</li>
+                            <li>Functions execution based on time</li>
+                            <li>Get time with Vanilla JS </li>
+                            <li>Math equation to convert time to degree on a clock</li>
+                        </ul>
+                        <a href="clock.html"> <button class="btn btn--block card__btn"> Tik Tok Tik Tok   </button> </a> 
+                      </div>
+                    </div>
+                  </li>
+            </ul>              
+        </div>
     </main>
 
     <footer><div class="copyright">&copy; Suherman Ng 2018</div></footer>

@@ -69,12 +69,43 @@
     </main>
 
     <footer><div class="copyright">&copy; Suherman Ng 2018</div></footer>
+      <audio data-key="65" src="./assets/audio/clap.wav"></audio>
+      <audio data-key="83" src="./assets/audio/hihat.wav"></audio>
+      <audio data-key="68" src="./assets/audio/kick.wav"></audio>
+      <audio data-key="70" src="./assets/audio/openhat.wav"></audio>
+      <audio data-key="71" src="./assets/audio/boom.wav"></audio>
+      <audio data-key="72" src="./assets/audio/ride.wav"></audio>
+      <audio data-key="74" src="./assets/audio/snare.wav"></audio>
+      <audio data-key="75" src="./assets/audio/tom.wav"></audio>
+      <audio data-key="76" src="./assets/audio/tink.wav"></audio>
     <script>
-        window.addEventListener('keyDown','playAudio');
+        function playSound(e){
+        const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+        if(!audio) return; // Stop if there is no audio
+        audio.currentTime = 0 // Playing it over and over again
+        audio.play();
+        //Adding play class on key element
+        const key = document.querySelector(`.key[data-key="${e.keyCode}"]`)
+        key.classList.add("playing")
+      }
+
+      function removeTransition(e){
+        if(e.propertyName !== 'transform') return // Skip it if its not a transform
+        this.classList.remove("playing")
+      }
+        //transition end detected to remove playing class
+        //Find all of the class selector of key
+        const keys = document.querySelectorAll('.key');
+
+        // Need to find transition end on each one!
+        //Now we have to loop on ever single node list
+        keys.forEach(key => key.addEventListener('transitionend', removeTransition))
+        window.addEventListener('keydown',playSound);
+
+
 
         
-        window.addEventListener('onClick','playAudio');
-
+      
         
     
     </script>

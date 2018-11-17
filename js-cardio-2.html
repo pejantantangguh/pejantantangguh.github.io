@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="layout.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    
+    <title>JS Cardio v2 </title>
+</head>
+<body class="grid__template-layout">
+    <header class="back__button"> <a href="index.html"><button> << Back </button> </a></header>
+        
+    <main class="splash-screen load drumkit">
+        <div class="flex__display">
+                <div class="title">
+                    <h1 class="title-top"><span class="big__letter">A</span>rrayyy <span class="big__letter">C</span>ardio <span class="big__letter">V</span> 2 </h1>
+                </div>
+                <br>
+                <div class="purple-with-blue">
+                    Inspect Element >> Console
+                </div>
+            </div>
+    </main>
+
+    <footer><div class="copyright">&copy; Suherman Ng 2018</div></footer>
+
+   <script>
+    const people = [
+        { name: 'Wes', year: 1988 },
+        { name: 'Kait', year: 1986 },
+        { name: 'Irv', year: 1970 },
+        { name: 'Lux', year: 2015 }
+     ];
+    const comments = [
+        { text: 'Love this!', id: 523423 },
+        { text: 'Super good', id: 823423 },
+        { text: 'You are the best', id: 2039842 },
+        { text: 'Ramen is my fav food ever', id: 123523 },
+        { text: 'Nice Nice Nice!', id: 542328 }
+   ];
+   /************************************************************
+                        Some and Every Checks
+   Array.prototype.some() // is at least one person 19 or older?
+   ************************************************************/
+   const isAdult = people.some(person => {
+     const currentYear = (new Date()).getFullYear();
+     if((currentYear - person.year) > 19 ){
+       console.log(true)
+     }
+     return false; // Stop function from running
+   });
+   /************************************************************
+                          Array.prototype.find()
+    Find is like filter, but instead returns just the one you are looking for
+    find the comment with the ID of 823423
+    ***********************************************************/
+    const commentId = comments.find(comment => {
+      return comment.id === 823423;
+    });
+    console.log(commentId);
+    /************************************************
+                Array.prototype.findIndex()
+    Find the comment with this ID
+    delete the comment with the ID of 823423
+    *************************************************/
+    const index = comments.findIndex(comment => {
+      return comment.id === 823423;
+    });
+    console.log(index);
+    comments.splice(index,1);
+    console.log(comments);
+
+   </script>
+   
+</body>
+</html>

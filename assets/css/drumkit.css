@@ -24,3 +24,9 @@
 kbd{
     display: block;
 }
+
+.playing {
+    transform: scale(1.1);
+    border-color: #fff;
+    box-shadow: 0 0 1rem #fff;
+}

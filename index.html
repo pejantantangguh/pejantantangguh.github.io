@@ -9,6 +9,37 @@
     <link rel="stylesheet" type="text/css" media="screen" href="layout.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 </head>
+<style>
+    .paw {
+    position: absolute; top: 0; left: 80px;
+    }
+
+    .ball {
+    background: #0097C0;
+    border-radius: 50%;
+    position: absolute; top: 200px; left: 160px;
+    width: 100px; height: 100px;
+    }
+    .paw {
+    transition: transform 300ms ease-in;
+    }
+
+    .paw.playing {
+    transform: translateX(30px);
+    }
+
+    .ball {
+transition: 
+    background 400ms 650ms,
+    transform 400ms 250ms;
+    }
+
+    .playing.ball {
+    transform : translateX(1600px);
+    background: red;
+    }
+
+</style>
 <body class="grid__template-layout">
     <header></header>
     <main class="flex__display splash-screen load">
@@ -27,14 +58,22 @@
             </div>
         </div>
 
-        
+        <div class="ball"></div>
+        <img class="paw" src="https://s3.amazonaws.com/stash.rachelnabors.com/codepen/css-animation-workshop/paw.png">
 
-        
+       
     </main>
     <footer>
         <div class="copyright">&copy; Suherman Ng 2018</div>
     </footer>
-
+    <script>
+            window.addEventListener('load', function(e) {
+                const paw = document.querySelector('.paw');
+                const ball = document.querySelector('.ball');
+                paw.classList.add('playing');
+                ball.classList.add('playing');
+            })
+        </script>
 
 </body>
 </html>

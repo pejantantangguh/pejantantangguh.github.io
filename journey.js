@@ -12,163 +12,191 @@ window.JOURNEY = {
   "phases": [
     {
       "n": 1,
-      "name": "Python for integration engineers",
+      "name": "Python foundations",
       "weeks": [
         1,
-        3
+        4
       ]
     },
     {
       "n": 2,
-      "name": "LLM APIs in production",
+      "name": "APIs and automation",
       "weeks": [
-        4,
-        5
+        5,
+        7
       ]
     },
     {
       "n": 3,
-      "name": "Agents and MCP",
+      "name": "LLMs in workflows",
       "weeks": [
-        6,
-        8
-      ]
-    },
-    {
-      "n": 4,
-      "name": "RAG and evals",
-      "weeks": [
-        9,
+        8,
         11
       ]
     },
     {
-      "n": 5,
-      "name": "Deploy and enterprise readiness",
+      "n": 4,
+      "name": "Knowledge assistants and MCP",
       "weeks": [
         12,
-        13
+        15
+      ]
+    },
+    {
+      "n": 5,
+      "name": "Implementation craft",
+      "weeks": [
+        16,
+        18
       ]
     },
     {
       "n": 6,
-      "name": "FDE skills and portfolio",
+      "name": "Portfolio and launch",
       "weeks": [
-        14,
-        16
+        19,
+        20
       ]
     }
   ],
   "weeks": [
     {
-      "title": "Python fast-track: syntax and data",
-      "ship": "Order sync CLI (orders to invoice JSON to SQLite)",
-      "post": "Why I'm learning Python after 8 years of C# integration work",
+      "title": "Python I: write your own code",
+      "ship": "Order summary script on GitHub",
+      "post": "I'm moving from integration support into AI implementation. Here's my 20-week plan.",
       "status": "planned",
       "links": []
     },
     {
-      "title": "Python fast-track: async, APIs and tests",
-      "ship": "Webhook sync service in FastAPI with tests and a Dockerfile",
-      "post": "Webhooks I learned to respect: idempotency, signatures and retries",
+      "title": "Python II: files and data",
+      "ship": "Two-file reconciliation script",
+      "post": "8 years of integrations taught me most 'API problems' are really data problems",
       "status": "planned",
       "links": []
     },
     {
-      "title": "Data, Git and coding fluency",
-      "ship": "Sync service on Postgres with CI passing",
-      "post": "Using an AI coding assistant without losing the skill",
+      "title": "Python III: calling APIs",
+      "ship": "Product pull and low-stock report",
+      "post": "Build log: my first Python script talking to a real API",
       "status": "planned",
       "links": []
     },
     {
-      "title": "LLM APIs I: fundamentals",
-      "ship": "Ticket triage classifier with measured accuracy and cost",
-      "post": "I taught an LLM my old support-ticket taxonomy. Here's the accuracy.",
+      "title": "Python IV and the 4-week check",
+      "ship": "Clean repo with three working scripts",
+      "post": "4 weeks of writing Python myself, no AI writing it. What was hard.",
       "status": "planned",
       "links": []
     },
     {
-      "title": "LLM APIs II: tools and prompts",
-      "ship": "Triage agent that looks up order status and drafts replies",
-      "post": "Writing an agent loop by hand, no framework",
+      "title": "APIs and webhooks",
+      "ship": "Webhook to Xero draft invoice",
+      "post": "Webhooks explained for people who aren't engineers",
       "status": "planned",
       "links": []
     },
     {
-      "title": "MCP I: Project 1 starts",
-      "ship": "Shop Ops MCP server for digital3d",
-      "post": "I built an MCP server for my own online shop",
-      "status": "planned",
-      "links": []
-    },
-    {
-      "title": "MCP II and agents",
-      "ship": "Daily stock agent with an exceptions report",
-      "post": "Read tools vs write tools: making an agent safe for a real shop",
+      "title": "Automation platforms",
+      "ship": "Project 1 working end to end",
+      "post": "n8n vs Make vs Zapier for a small business: which I'd pick",
       "status": "planned",
       "links": []
     },
     {
       "title": "Ship Project 1",
-      "ship": "Project 1 public: repo, demo video, case study",
-      "post": "Project 1 case study: from a shop owner's problem to a working agent",
+      "ship": "Project 1: order-to-invoice automation (repo, case study, demo)",
+      "post": "Demo: I automated order-to-invoice with n8n and Python",
       "status": "planned",
       "links": []
     },
     {
-      "title": "RAG I: Project 2 starts",
-      "ship": "Integration Docs Copilot, first version",
-      "post": "I turned API docs into a copilot. Chunking mattered more than the model.",
+      "title": "LLM APIs",
+      "ship": "Email extraction with measured accuracy and cost",
+      "post": "What an LLM call actually costs a small business",
       "status": "planned",
       "links": []
     },
     {
-      "title": "Evals (holiday week)",
-      "ship": "40-question English golden set and baseline scores",
-      "post": "How I measure whether my AI app is actually right",
+      "title": "LLMs inside workflows",
+      "ship": "Project 2 working draft",
+      "post": "Can AI reply to customers in Bahasa Indonesia? I tested it.",
       "status": "planned",
       "links": []
     },
     {
-      "title": "Bahasa Indonesia evals (holiday week)",
-      "ship": "Eval report: English vs Indonesian, before vs after",
-      "post": "How well do LLMs handle Bahasa Indonesia? I tested it.",
+      "title": "Measuring quality (holiday week)",
+      "ship": "40-email golden set and first scores",
+      "post": "10 weeks into my AI implementation pivot: what's working",
       "status": "planned",
       "links": []
     },
     {
-      "title": "Deploy",
-      "ship": "Project 3: Project 2 live on Azure with auth and logging",
-      "post": "Taking an AI app from laptop to Azure: what broke",
+      "title": "Ship Project 2 (holiday week)",
+      "ship": "Project 2: bilingual support inbox triage",
+      "post": "Demo: AI triage for a support inbox in English and Bahasa",
       "status": "planned",
       "links": []
     },
     {
-      "title": "Enterprise readiness",
-      "ship": "Threat model and red-team results for Project 2",
-      "post": "I tried 20 prompt-injection attacks on my own app",
+      "title": "Knowledge bases",
+      "ship": "Project 3 first version",
+      "post": "RAG explained with an online shop's FAQ",
       "status": "planned",
       "links": []
     },
     {
-      "title": "FDE skills",
-      "ship": "AI opportunity assessment, SOW and a take-home simulation",
-      "post": "Scoping an AI project: the SOW template I use",
+      "title": "Quality and Bahasa",
+      "ship": "English vs Bahasa scores, before and after",
+      "post": "How I stop an AI assistant making things up",
+      "status": "planned",
+      "links": []
+    },
+    {
+      "title": "Agents and MCP",
+      "ship": "Stock lookup through your own MCP server",
+      "post": "I connected Claude to my own online shop",
+      "status": "planned",
+      "links": []
+    },
+    {
+      "title": "Ship Project 3",
+      "ship": "Project 3: bilingual knowledge assistant with eval report",
+      "post": "Demo and numbers: my bilingual AI assistant, English vs Bahasa",
+      "status": "planned",
+      "links": []
+    },
+    {
+      "title": "Implementation craft I: discovery and scoping",
+      "ship": "Opportunity assessment, SOW and ROI model",
+      "post": "The 10 questions I ask before building any AI workflow",
+      "status": "planned",
+      "links": []
+    },
+    {
+      "title": "Implementation craft II: rollout",
+      "ship": "Project 4: AI implementation pack",
+      "post": "What rolling out new systems to frontline staff taught me",
+      "status": "planned",
+      "links": []
+    },
+    {
+      "title": "Enterprise platforms",
+      "ship": "A slice of Project 3 rebuilt in Copilot Studio",
+      "post": "Copilot Studio vs building it yourself",
       "status": "planned",
       "links": []
     },
     {
       "title": "Portfolio and positioning",
-      "ship": "Portfolio page, resume v2, three demo videos",
-      "post": "16 weeks, 3 projects: what I'd do differently",
+      "ship": "Portfolio page, resume v2, demo reel",
+      "post": "4 projects in 19 weeks: my AI implementation portfolio",
       "status": "planned",
       "links": []
     },
     {
-      "title": "Launch",
+      "title": "Interview-ready",
       "ship": "Next 8-week plan",
-      "post": "What's next after my FDE training plan",
+      "post": "20 weeks later: what changed",
       "status": "planned",
       "links": []
     }

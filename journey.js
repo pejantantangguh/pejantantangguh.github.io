@@ -52,7 +52,7 @@ window.JOURNEY = {
     },
     {
       "n": 6,
-      "name": "FDE skills and job launch",
+      "name": "FDE skills and portfolio",
       "weeks": [
         14,
         16

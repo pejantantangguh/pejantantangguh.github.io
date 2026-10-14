@@ -424,7 +424,7 @@
   /* ---------- contact ---------- */
   .contact-grid{
     display:grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr);
     gap:40px;
     align-items:start;
   }
@@ -436,8 +436,10 @@
     border-bottom:1px solid var(--border);
   }
   .contact-list .row:last-child{border-bottom:none;}
-  .contact-list .label{color:var(--muted);font-size:.85rem;}
-  .contact-list .value{font-family:'JetBrains Mono',monospace;font-size:.92rem;}
+  .contact-list .label{color:var(--muted);font-size:.85rem;flex-shrink:0;}
+  .contact-list .value{font-family:'JetBrains Mono',monospace;font-size:.92rem;overflow-wrap:anywhere;min-width:0;}
+  .contact-list .row{gap:12px;}
+  .contact-list .row > *{min-width:0;}
   .copy-btn{
     background:none;border:1px solid var(--border-strong);
     color:var(--muted);
@@ -489,7 +491,7 @@
   @media (max-width:900px){
     .hero-inner{grid-template-columns:1fr;}
     .about-grid{grid-template-columns:1fr;}
-    .skills-grid, .project-grid, .contact-grid{grid-template-columns:1fr;}
+    .skills-grid, .project-grid, .contact-grid{grid-template-columns:minmax(0,1fr);}
   }
   @media (max-width:600px){
     .wrap, .hero-inner, .nav-inner{padding-left:20px;padding-right:20px;}
@@ -699,7 +701,7 @@
   <section id="journey" class="section-alt">
     <div class="wrap">
       <div class="section-head">
-        <h2>Learning in public</h2>
+        <h2>FDE learning journey</h2>
         <p>A 16-week build toward deploying AI inside real businesses: Python, LLM APIs, MCP agents, retrieval and evals, and cloud deployment. Each week ships something and gets a write-up.</p>
       </div>
       <div class="eyebrow-tag journey-now"><span class="dot"></span><span id="journeyNow">16-week plan</span></div>
